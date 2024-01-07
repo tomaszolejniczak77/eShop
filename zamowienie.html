@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs JS</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+    <nav id="navCard">
+        <a href="koszyk.html"><button class="button">Koszyk</button></a>
+    </nav>
+
+    <div id="loading">Przesyłanie zamówienia</div>
+
+    <h2>Finalizacja zamówienia</h2>
+
+    <form class="form">
+
+      <div class="summary">
+
+        <div class="clientInfo">  
+
+         <h3>Dane:</h3>
+
+         <div class="formItems">
+          <label for="name">Imię i nazwisko:</label>
+          <input type="text" id="name" name="name">
+         </div>
+
+         <div class="formItems">
+          <label for="mail">E-mail:</label>
+          <input type="email" id="mail" name="mail">
+         </div>
+
+         <div class="formItems">
+          <label for="mailConfirm">Powtórz e-mail:</label>
+          <input type="email" id="mailConfirm" name="mailConfirm">
+         </div>
+
+         <div class="formItems">
+            <label for="tel">Numer telefonu:</label>
+            <input type="text" id="tel" name="tel">
+         </div>
+
+         <h3>Płatność:</h3>
+
+         <div class="formItems">
+            <label for="payment">Karta</label>
+            <input type="radio" id="payment" name="payment" value="card" checked>
+         </div>
+
+         <div class="formItems">
+            <label for="payment">Blik</label>
+            <input type="radio" id="payment" name="payment" value="blik">
+         </div>
+
+        </div>
+
+        <div class="productInfo">
+         <h3>Podsumowanie:</h3>
+
+         <ul id="purchasedItems">
+         <li></li>
+         </ul>
+
+         <hr style="color: green;">
+    
+         <p><b>Cena</b>: <span id="totalPurchasedPrice"></span> PLN</p>
+         <p><b>Data zamówienia</b>: <span id="date"></span></p>
+
+         <ul id="errors"></ul>
+
+        </div>  
+
+        
+      </div>
+
+     <button type="submit" id="purchaseBtn" class="button">Kupuję</button>
+     
+    </form>
+    
+    <script src="src/js/order.js"></script>
+    
+</body>
+</html>

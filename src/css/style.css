@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+body {
+    background: black;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    color: goldenrod;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navCard {
+    background-color: #08251c;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#navCard a { 
+    text-decoration: none;
+    margin-right: 3rem;
+}
+
+.card-table {
+width: 100%;
+}
+
+.card-table th,
+.card-table td {
+    border: 1px solid wheat;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-table th {
+    background-color: brown;
+}
+
+.card-table td input {
+    width: 40px;
+}
+
+.tdTotal {
+    font-weight: bold;
+}
+
+.discount {
+    border: 1px solid wheat;
+    padding: 4px 8px;
+}
+
+.off {
+display: none;
+}
+
+.labelDiscount {
+    cursor: pointer;;
+}
+
+.marked {
+    background-color: darkblue;
+}
+
+.rowBtnDel {
+    font-size: 18px;
+    color: goldenrod;
+    cursor: pointer;
+    background: none;
+}
+
+input {
+    background: none;
+    color: goldenrod;
+    font-size: 18px;
+}
+
+h2,
+h4 {
+    text-align: center;
+}
+
+.box {
+    background-color: #08251c;
+    border-radius: 10px;
+}
+
+.box-body {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #7b63f6;;
+    border: 0;
+    /* padding: 12px 25px; */
+    cursor: pointer;
+    transition: all 0.2s linear;
+    border-radius: 5px;
+    width: 160px;
+    height: 40px;
+}
+
+.button:hover {
+    background-color: #4734a5;
+}
+
+.courses-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navigation {
+    background-color: #08251c;
+    height: 70px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navigation a{
+    margin-right: 3rem;
+}
+
+.counter {
+    background: wheat;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 6px;
+    padding: 2px 4px;
+}
+
+.button.clicked {
+    background-color: aqua;
+}
+
+.promotion{
+    width: 100%;
+    text-align: center;
+}
+
+#promotionCounter {
+    color: green;
+}
+
+#toOrder {
+    float: right;
+    margin: 3rem 3rem 0px 0px;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.clientInfo {
+    display: flex;
+    flex-direction: column;
+    background-color: #08251c;
+    padding: 1rem;
+}
+
+.formItems {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.formItems input {
+    background-color: white;
+    color: black;
+    margin-left: 5px;
+}
+
+.formItems label {
+    display: flex;
+    align-items: center;
+}
+
+.productInfo {
+    background-color: #08251c;
+    padding: 1rem;
+}
+
+#purchaseBtn {
+    float: right;
+    margin: 3rem;
+}
+
+#errors {
+    padding: 0;
+    margin-top: 2rem;
+}
+
+#errors li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: brown;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:#7b63f6;
+    color: brown;
+    opacity: 0.7;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .formItems input {
+        height: 50px;
+    }
+
+}
+
+@media (max-width: 370px) {
+
+    .clientInfo {
+        padding: 0 5px;
+    }
+
+}

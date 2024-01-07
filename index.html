@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eShop</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <nav class="navigation">
+      <!-- <ul class="navigation-list">
+            <li class="navigation-item"></li>
+        </ul> -->
+
+      <div class="cart">
+        <a href="/koszyk.html">
+          <button class="button">
+            Koszyk
+            <span class="counter">0</span>
+          </button>
+        </a>
+      </div>
+    </nav>
+
+    <h2>Dostępne kursy</h2>
+
+    <div class="promotion">
+      <p>Promocja na wszytskie kursy jeszcze przez:</p>
+      <p id="promotionCounter"></p>
+    </div>
+
+    <section class="courses-list">
+      <div class="box">
+        <img class="img" src="src/img/php.jpg" alt="Kurs PHP" />
+        <div class="box-body">
+          <p class="box-title">PHP od podstaw</p>
+          <p><b>Cena:</b>: 99.02 PLN</p>
+          <button
+            class="button cartButton"
+            data-title="PHP od podstaw"
+            data-price="99.02"
+            data-id="1"
+          >
+            Dodaj do koszyka
+          </button>
+        </div>
+      </div>
+
+      <div class="box">
+        <img class="img" src="src/img/js.jpg" alt="Kurs JS" />
+        <div class="box-body">
+          <p class="box-title">JS od podstaw</p>
+          <p><b>Cena:</b>: 99.01 PLN</p>
+          <button
+            class="button cartButton"
+            data-title="JS od podstaw"
+            data-price="99.01"
+            data-id="2"
+          >
+            Dodaj do koszyka
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="src/js/app.js" type="module"></script>
+  </body>
+</html>
